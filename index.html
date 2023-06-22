@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gym offer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .offer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .plan {
+            padding: 2.5rem;
+            margin: 12px;
+            color: #C0C0C0;
+            background-color: #252626;
+            border-radius: 8px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .plan h2 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .plan .price {
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+
+        .plan ul.details {
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .plan ul.details li {
+            margin: 8px;
+        }
+
+        .plan li .fa-check {
+            color: #6ab04c;
+        }
+
+        .plan li .fa-times {
+            color: #eb4d4b;
+        }
+
+        .plan a {
+            display: block;
+            margin-top: 1.5rem;
+            padding: 11px 32px;
+            color: white;
+            background-color: #3E672D;
+            border-radius: 8px;
+            font-size: 1.1rem;
+        }
+
+        .plan.top {
+            border: 2px solid #6ab04c;
+        }
+
+        .listing-badges {
+            position: relative;
+        }
+
+        .plan.top span {
+            padding: 4px;
+            position: absolute;
+            left: -74px;
+            top: -20px;
+            width: 130px;
+            transform: rotate(-45deg);
+            background-color: #6ab04c;
+            color: white;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="offer">
+        <div class="plan">
+            <h2>Basic</h2>
+            <div class="price">5$ / Mo</div>
+            <ul class="details">
+                <li> <i class="fa-solid fa-check"></i> Gym available until 4pm </li>
+                <li> <i class="fa-solid fa-check"></i> Access to 2 group exercises per month  </li>
+                <li> <i class="fa-solid fa-times"></i> No access to the swimming pool  </li>
+                <li> <i class="fa-solid fa-times"></i> No access to the tennis court </li>
+                <li> <i class="fa-solid fa-check"></i> Access to the crossfit zone  </li>
+                <li> <i class="fa-solid fa-times"></i> No access to the sauna </li>
+                <li> <i class="fa-solid fa-times"></i> No personal trainer  </li>
+            </ul>
+            <a href="#">Subscribe</a>
+        </div>
+
+        <div class="plan">
+            <h2>Standard</h2>
+            <div class="price">15$ / Mo</div>
+            <ul class="details">
+                <li> <i class="fa-solid fa-check"></i> Gym available 24/7 </li>
+                <li> <i class="fa-solid fa-check"></i> Access to 4 group exercises per month  </li>
+                <li> <i class="fa-solid fa-check"></i> Access to the swimming pool twice a month  </li>
+                <li> <i class="fa-solid fa-check"></i> Access to the tennis court twice a month  </li>
+                <li> <i class="fa-solid fa-check"></i> Access to the crossfit zone  </li>
+                <li> <i class="fa-solid fa-times"></i> No access to the sauna  </li>
+                <li> <i class="fa-solid fa-times"></i> No personal trainer  </li>
+            </ul>
+            <a href="#">Subscribe</a>
+        </div>
+
+        <div class="plan top">
+            <div class="listing-badges">
+                <span>Popular</span>
+            </div>
+            <h2>Premium</h2>
+            <div class="price">50$ / Mo</div>
+            <ul class="details">
+                <li> <i class="fa-solid fa-check"></i> Gym available 24/7  </li>
+                <li> <i class="fa-solid fa-check"></i> Access to 8 group exercises per month </li>
+                <li> <i class="fa-solid fa-check"></i> Access to the swimming pool eight times in a month  </li>
+                <li> <i class="fa-solid fa-check"></i> Access to the tennis court eight times in a month  </li>
+                <li> <i class="fa-solid fa-check"></i> Access to the crossfit zone  </li>
+                <li> <i class="fa-solid fa-check"></i> Access to the sauna  </li>
+                <li> <i class="fa-solid fa-check"></i> Access to a personal trainer  </li>
+            </ul>
+            <a href="#">Subscribe</a>
+        </div>
+    </div>
+</body>
+</html>
